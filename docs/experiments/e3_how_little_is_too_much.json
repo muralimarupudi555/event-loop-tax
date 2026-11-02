@@ -1,0 +1,220 @@
+{
+  "machine": {
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "logical_cores": 2
+  },
+  "experiment": "e3_how_little_is_too_much",
+  "question": "What fraction of a handler may block before throughput is lost?",
+  "work_ms": 5.0,
+  "fractions": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "concurrencies": [
+    50,
+    200
+  ],
+  "cells": [
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.0,
+      "blocking_ms": 0.0,
+      "rps": 8304.6,
+      "retained": 1.0,
+      "ceiling_rps": 10000.0,
+      "lag_p99_ms": 0.87,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.005,
+      "blocking_ms": 0.025,
+      "rps": 7369.5,
+      "retained": 0.8874,
+      "ceiling_rps": 10000.0,
+      "lag_p99_ms": 0.97,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.01,
+      "blocking_ms": 0.05,
+      "rps": 6009.0,
+      "retained": 0.7236,
+      "ceiling_rps": 10000.0,
+      "lag_p99_ms": 3.52,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.02,
+      "blocking_ms": 0.1,
+      "rps": 4659.7,
+      "retained": 0.5611,
+      "ceiling_rps": 10000.0,
+      "lag_p99_ms": 4.34,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.05,
+      "blocking_ms": 0.25,
+      "rps": 2243.4,
+      "retained": 0.2701,
+      "ceiling_rps": 4000.0,
+      "lag_p99_ms": 13.54,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.1,
+      "blocking_ms": 0.5,
+      "rps": 1422.8,
+      "retained": 0.1713,
+      "ceiling_rps": 2000.0,
+      "lag_p99_ms": 25.34,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.25,
+      "blocking_ms": 1.25,
+      "rps": 678.1,
+      "retained": 0.0817,
+      "ceiling_rps": 800.0,
+      "lag_p99_ms": 63.4,
+      "loop_blocked": true
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 0.5,
+      "blocking_ms": 2.5,
+      "rps": 362.4,
+      "retained": 0.0436,
+      "ceiling_rps": 400.0,
+      "lag_p99_ms": 128.47,
+      "loop_blocked": true
+    },
+    {
+      "concurrency": 50,
+      "blocking_fraction": 1.0,
+      "blocking_ms": 5.0,
+      "rps": 190.8,
+      "retained": 0.023,
+      "ceiling_rps": 200.0,
+      "lag_p99_ms": 2086.64,
+      "loop_blocked": true
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.0,
+      "blocking_ms": 0.0,
+      "rps": 26663.5,
+      "retained": 1.0,
+      "ceiling_rps": 40000.0,
+      "lag_p99_ms": 0.34,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.005,
+      "blocking_ms": 0.025,
+      "rps": 8043.1,
+      "retained": 0.3017,
+      "ceiling_rps": 40000.0,
+      "lag_p99_ms": 11.86,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.01,
+      "blocking_ms": 0.05,
+      "rps": 6493.9,
+      "retained": 0.2436,
+      "ceiling_rps": 20000.0,
+      "lag_p99_ms": 17.55,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.02,
+      "blocking_ms": 0.1,
+      "rps": 4835.0,
+      "retained": 0.1813,
+      "ceiling_rps": 10000.0,
+      "lag_p99_ms": 28.38,
+      "loop_blocked": false
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.05,
+      "blocking_ms": 0.25,
+      "rps": 2324.1,
+      "retained": 0.0872,
+      "ceiling_rps": 4000.0,
+      "lag_p99_ms": 73.09,
+      "loop_blocked": true
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.1,
+      "blocking_ms": 0.5,
+      "rps": 1414.7,
+      "retained": 0.0531,
+      "ceiling_rps": 2000.0,
+      "lag_p99_ms": 127.59,
+      "loop_blocked": true
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.25,
+      "blocking_ms": 1.25,
+      "rps": 674.5,
+      "retained": 0.0253,
+      "ceiling_rps": 800.0,
+      "lag_p99_ms": 288.11,
+      "loop_blocked": true
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 0.5,
+      "blocking_ms": 2.5,
+      "rps": 362.5,
+      "retained": 0.0136,
+      "ceiling_rps": 400.0,
+      "lag_p99_ms": 543.3,
+      "loop_blocked": true
+    },
+    {
+      "concurrency": 200,
+      "blocking_fraction": 1.0,
+      "blocking_ms": 5.0,
+      "rps": 189.5,
+      "retained": 0.0071,
+      "ceiling_rps": 200.0,
+      "lag_p99_ms": 2100.82,
+      "loop_blocked": true
+    }
+  ],
+  "predicted_knees": {
+    "50": 0.02,
+    "200": 0.005
+  },
+  "measured_knees": {
+    "50": 0.005,
+    "200": 0.005
+  },
+  "smallest_fraction": 0.005,
+  "smallest_fraction_blocking_ms": 0.025,
+  "loss_at_smallest_low_concurrency": 0.1126,
+  "loss_at_smallest_high_concurrency": 0.6983,
+  "quiet_lag_p99_ms": 3.52
+}

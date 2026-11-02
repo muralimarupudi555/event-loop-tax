@@ -1,0 +1,55 @@
+{
+  "machine": {
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+    "logical_cores": 2
+  },
+  "experiment": "e4_three_clocks",
+  "question": "Would the instrumentation a service already has catch this?",
+  "work_ms": 50.0,
+  "concurrency": 10,
+  "requests": 250,
+  "apparatus_ceiling_rps": 726.0,
+  "predicted_handler_rps": 200.0,
+  "cells": [
+    {
+      "shape": "async_awaited",
+      "rps": 177.2,
+      "handler_p99_ms": 52.29,
+      "middleware_p99_ms": 55.0,
+      "client_p99_ms": 62.78,
+      "errors": 0
+    },
+    {
+      "shape": "sync_threadpool",
+      "rps": 177.5,
+      "handler_p99_ms": 52.87,
+      "middleware_p99_ms": 60.68,
+      "client_p99_ms": 72.91,
+      "errors": 0
+    },
+    {
+      "shape": "async_offloaded",
+      "rps": 175.4,
+      "handler_p99_ms": 55.22,
+      "middleware_p99_ms": 57.8,
+      "client_p99_ms": 67.67,
+      "errors": 0
+    },
+    {
+      "shape": "async_blocking",
+      "rps": 19.4,
+      "handler_p99_ms": 53.24,
+      "middleware_p99_ms": 475.63,
+      "client_p99_ms": 572.74,
+      "errors": 0
+    }
+  ],
+  "blocking_handler_p99_ms": 53.24,
+  "blocking_client_p99_ms": 572.74,
+  "blocking_middleware_p99_ms": 475.63,
+  "handler_clock_blind_factor": 10.8,
+  "handler_clock_healthy_factor": 1.2,
+  "live_throughput_drop": 9.1,
+  "errors": 0
+}
