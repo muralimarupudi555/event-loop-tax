@@ -164,3 +164,40 @@ async def measure_async(config: ScenarioConfig) -> Measurement:
 
 def measure(config: ScenarioConfig) -> Measurement:
     return asyncio.run(measure_async(config))
+
+
+# Work sizes used to calibrate the harness, in milliseconds. Two points far enough apart
+# that a fixed per request cost shows up clearly in the difference.
+CALIBRATION_WORK_MS = (4.0, 32.0)
+
+
+async def calibrate_overhead_async(concurrency: int, requests: int = 300,
+                                   repeats: int = 3) -> tuple[float, float]:
+    """Measure what the harness costs per request, independently of any comparison.
+
+    Per request wall time is modelled as the handler's work plus a fixed cost: parking a
+    coroutine, waking it, acquiring the gate, reading the clock. Running a shape that
+    yields properly at two different work sizes gives two equations in that one unknown,
+    and the two answers should agree.
+
+    Returns the overhead in seconds and the ratio between the two estimates. A ratio far
+    from one means the cost is not fixed and the correction should not be trusted, which
+    is reported rather than averaged away.
+    """
+    estimates = []
+    for work_ms in CALIBRATION_WORK_MS:
+        config = ScenarioConfig(handler="async_awaited", work_ms=work_ms,
+                                concurrency=concurrency, requests=requests,
+                                repeats=repeats, warmup_requests=20)
+        result = await measure_async(config)
+        per_request = concurrency / result.rps if result.rps > 0 else 0.0
+        estimates.append(max(0.0, per_request - config.work_seconds))
+
+    low, high = min(estimates), max(estimates)
+    consistency = high / low if low > 0 else float("inf")
+    return sum(estimates) / len(estimates), consistency
+
+
+def calibrate_overhead(concurrency: int, requests: int = 300,
+                       repeats: int = 3) -> tuple[float, float]:
+    return asyncio.run(calibrate_overhead_async(concurrency, requests, repeats))
