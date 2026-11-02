@@ -12,6 +12,7 @@ have nothing else in common.
 from __future__ import annotations
 
 import asyncio
+import contextlib
 import statistics
 import time
 from dataclasses import dataclass
@@ -52,10 +53,8 @@ class LoopLagProbe:
     async def _run(self) -> None:
         while not self._stop.is_set():
             started = time.perf_counter()
-            try:
+            with contextlib.suppress(TimeoutError):
                 await asyncio.wait_for(self._stop.wait(), timeout=self._interval)
-            except TimeoutError:
-                pass
             overshoot = (time.perf_counter() - started) - self._interval
             # A negative overshoot means the stop event fired early, not that the loop ran
             # ahead of schedule. Those samples are discarded rather than recorded as
