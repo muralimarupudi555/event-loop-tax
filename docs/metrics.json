@@ -1,0 +1,571 @@
+{
+  "metrics": {
+    "tests_total": 90,
+    "coverage_line_pct": 100,
+    "work_ms": 5.0,
+    "concurrency": 50,
+    "awaited_over_blocking": 43.6,
+    "sync_over_blocking": 34.8,
+    "blocking_p99_ms": 5.93,
+    "blocking_lag_p99_ms": 3144.0,
+    "awaited_lag_p99_ms": 1.1,
+    "healthy_with_worse_p99": 3,
+    "invariant_min": 0.9308,
+    "invariant_max": 0.9571,
+    "invariant_drift": 1.028,
+    "concurrency_range": 200,
+    "awaited_growth": 152,
+    "blocking_growth": 1.03,
+    "e3_work_ms": 5.0,
+    "smallest_fraction_blocking_ms": 0.025,
+    "loss_low_pct": 11.3,
+    "loss_high_pct": 69.8,
+    "low_concurrency": 50,
+    "high_concurrency": 200,
+    "quiet_lag_p99_ms": 3.52,
+    "handler_p99_ms": 53.24,
+    "client_p99_ms": 572.74,
+    "middleware_p99_ms": 475.63,
+    "blind_factor": 10.8,
+    "healthy_factor": 1.2,
+    "live_throughput_drop": 9.1,
+    "apparatus_ceiling_rps": 726.0,
+    "live_predicted_rps": 200.0,
+    "e1_async_awaited_rps": 8296.7,
+    "e1_async_awaited_ceiling": 10000.0,
+    "e1_async_awaited_p99": 5.95,
+    "e1_async_awaited_lag": 1.1,
+    "e1_async_blocking_rps": 190.2,
+    "e1_async_blocking_ceiling": 200.0,
+    "e1_async_blocking_p99": 5.93,
+    "e1_async_blocking_lag": 3144.34,
+    "e1_sync_threadpool_rps": 6627.7,
+    "e1_sync_threadpool_ceiling": 8000.0,
+    "e1_sync_threadpool_p99": 9.83,
+    "e1_sync_threadpool_lag": 1.88,
+    "e1_async_offloaded_rps": 6548.2,
+    "e1_async_offloaded_ceiling": 8000.0,
+    "e1_async_offloaded_p99": 9.97,
+    "e1_async_offloaded_lag": 1.21,
+    "e2_async_awaited_1": 187.0,
+    "e2_async_awaited_5": 904.1,
+    "e2_async_awaited_10": 1812.7,
+    "e2_async_awaited_25": 4374.3,
+    "e2_async_awaited_50": 8204.8,
+    "e2_async_awaited_100": 14949.0,
+    "e2_async_awaited_200": 28463.8,
+    "e2_async_blocking_1": 186.2,
+    "e2_async_blocking_1_inv": 0.9308,
+    "e2_async_blocking_5": 190.3,
+    "e2_async_blocking_5_inv": 0.9515,
+    "e2_async_blocking_10": 190.4,
+    "e2_async_blocking_10_inv": 0.9518,
+    "e2_async_blocking_25": 188.7,
+    "e2_async_blocking_25_inv": 0.9434,
+    "e2_async_blocking_50": 191.2,
+    "e2_async_blocking_50_inv": 0.9559,
+    "e2_async_blocking_100": 189.2,
+    "e2_async_blocking_100_inv": 0.9462,
+    "e2_async_blocking_200": 191.4,
+    "e2_async_blocking_200_inv": 0.9571,
+    "e3_fraction_00": 0.0,
+    "e3_fraction_0005": 0.005,
+    "e3_fraction_001": 0.01,
+    "e3_fraction_002": 0.02,
+    "e3_fraction_005": 0.05,
+    "e3_fraction_01": 0.1,
+    "e3_fraction_025": 0.25,
+    "e3_fraction_05": 0.5,
+    "e3_fraction_10": 1.0,
+    "e3_50_00": 100.0,
+    "e3_50_0005": 88.7,
+    "e3_50_001": 72.4,
+    "e3_50_002": 56.1,
+    "e3_50_005": 27.0,
+    "e3_50_01": 17.1,
+    "e3_50_025": 8.2,
+    "e3_50_05": 4.4,
+    "e3_50_10": 2.3,
+    "e3_200_00": 100.0,
+    "e3_200_0005": 30.2,
+    "e3_200_001": 24.4,
+    "e3_200_002": 18.1,
+    "e3_200_005": 8.7,
+    "e3_200_01": 5.3,
+    "e3_200_025": 2.5,
+    "e3_200_05": 1.4,
+    "e3_200_10": 0.7,
+    "e4_async_awaited_rps": 177.2,
+    "e4_async_awaited_handler": 52.29,
+    "e4_async_awaited_middleware": 55.0,
+    "e4_async_awaited_client": 62.78,
+    "e4_sync_threadpool_rps": 177.5,
+    "e4_sync_threadpool_handler": 52.87,
+    "e4_sync_threadpool_middleware": 60.68,
+    "e4_sync_threadpool_client": 72.91,
+    "e4_async_offloaded_rps": 175.4,
+    "e4_async_offloaded_handler": 55.22,
+    "e4_async_offloaded_middleware": 57.8,
+    "e4_async_offloaded_client": 67.67,
+    "e4_async_blocking_rps": 19.4,
+    "e4_async_blocking_handler": 53.24,
+    "e4_async_blocking_middleware": 475.63,
+    "e4_async_blocking_client": 572.74
+  },
+  "display": {
+    "tests_total": "90",
+    "coverage_line_pct": "100",
+    "work_ms": "5",
+    "concurrency": "50",
+    "awaited_over_blocking": "43.6",
+    "sync_over_blocking": "34.8",
+    "blocking_p99_ms": "5.93",
+    "blocking_lag_p99_ms": "3144",
+    "awaited_lag_p99_ms": "1.10",
+    "healthy_with_worse_p99": "3",
+    "invariant_min": "0.9308",
+    "invariant_max": "0.9571",
+    "invariant_drift": "1.028",
+    "concurrency_range": "200",
+    "awaited_growth": "152",
+    "blocking_growth": "1.03",
+    "e3_work_ms": "5",
+    "smallest_fraction_blocking_ms": "0.025",
+    "loss_low_pct": "11.3",
+    "loss_high_pct": "69.8",
+    "low_concurrency": "50",
+    "high_concurrency": "200",
+    "quiet_lag_p99_ms": "3.52",
+    "handler_p99_ms": "53.24",
+    "client_p99_ms": "572.74",
+    "middleware_p99_ms": "475.63",
+    "blind_factor": "10.8",
+    "healthy_factor": "1.20",
+    "live_throughput_drop": "9.1",
+    "apparatus_ceiling_rps": "726",
+    "live_predicted_rps": "200",
+    "e1_async_awaited_rps": "8296.7",
+    "e1_async_awaited_ceiling": "10000.0",
+    "e1_async_awaited_p99": "5.95",
+    "e1_async_awaited_lag": "1.10",
+    "e1_async_blocking_rps": "190.20",
+    "e1_async_blocking_ceiling": "200.00",
+    "e1_async_blocking_p99": "5.93",
+    "e1_async_blocking_lag": "3144.3",
+    "e1_sync_threadpool_rps": "6627.7",
+    "e1_sync_threadpool_ceiling": "8000.0",
+    "e1_sync_threadpool_p99": "9.83",
+    "e1_sync_threadpool_lag": "1.88",
+    "e1_async_offloaded_rps": "6548.2",
+    "e1_async_offloaded_ceiling": "8000.0",
+    "e1_async_offloaded_p99": "9.97",
+    "e1_async_offloaded_lag": "1.21",
+    "e2_async_awaited_1": "187.0",
+    "e2_async_awaited_5": "904.1",
+    "e2_async_awaited_10": "1812.7",
+    "e2_async_awaited_25": "4374.3",
+    "e2_async_awaited_50": "8204.8",
+    "e2_async_awaited_100": "14949.0",
+    "e2_async_awaited_200": "28463.8",
+    "e2_async_blocking_1": "186.2",
+    "e2_async_blocking_1_inv": "0.9308",
+    "e2_async_blocking_5": "190.3",
+    "e2_async_blocking_5_inv": "0.9515",
+    "e2_async_blocking_10": "190.4",
+    "e2_async_blocking_10_inv": "0.9518",
+    "e2_async_blocking_25": "188.7",
+    "e2_async_blocking_25_inv": "0.9434",
+    "e2_async_blocking_50": "191.2",
+    "e2_async_blocking_50_inv": "0.9559",
+    "e2_async_blocking_100": "189.2",
+    "e2_async_blocking_100_inv": "0.9462",
+    "e2_async_blocking_200": "191.4",
+    "e2_async_blocking_200_inv": "0.9571",
+    "e3_fraction_00": "0",
+    "e3_fraction_0005": "0.005",
+    "e3_fraction_001": "0.01",
+    "e3_fraction_002": "0.02",
+    "e3_fraction_005": "0.05",
+    "e3_fraction_01": "0.1",
+    "e3_fraction_025": "0.25",
+    "e3_fraction_05": "0.5",
+    "e3_fraction_10": "1",
+    "e3_50_00": "100.0",
+    "e3_50_0005": "88.7",
+    "e3_50_001": "72.4",
+    "e3_50_002": "56.1",
+    "e3_50_005": "27.0",
+    "e3_50_01": "17.1",
+    "e3_50_025": "8.2",
+    "e3_50_05": "4.4",
+    "e3_50_10": "2.3",
+    "e3_200_00": "100.0",
+    "e3_200_0005": "30.2",
+    "e3_200_001": "24.4",
+    "e3_200_002": "18.1",
+    "e3_200_005": "8.7",
+    "e3_200_01": "5.3",
+    "e3_200_025": "2.5",
+    "e3_200_05": "1.4",
+    "e3_200_10": "0.7",
+    "e4_async_awaited_rps": "177.20",
+    "e4_async_awaited_handler": "52.29",
+    "e4_async_awaited_middleware": "55.00",
+    "e4_async_awaited_client": "62.78",
+    "e4_sync_threadpool_rps": "177.50",
+    "e4_sync_threadpool_handler": "52.87",
+    "e4_sync_threadpool_middleware": "60.68",
+    "e4_sync_threadpool_client": "72.91",
+    "e4_async_offloaded_rps": "175.40",
+    "e4_async_offloaded_handler": "55.22",
+    "e4_async_offloaded_middleware": "57.80",
+    "e4_async_offloaded_client": "67.67",
+    "e4_async_blocking_rps": "19.40",
+    "e4_async_blocking_handler": "53.24",
+    "e4_async_blocking_middleware": "475.63",
+    "e4_async_blocking_client": "572.74"
+  },
+  "anchors": {
+    "tests_total": [
+      "{} tests"
+    ],
+    "coverage_line_pct": [
+      "{} percent line coverage"
+    ],
+    "work_ms": [
+      "{}ms of work"
+    ],
+    "concurrency": [
+      "{} concurrent"
+    ],
+    "awaited_over_blocking": [
+      "{} times the throughput"
+    ],
+    "sync_over_blocking": [
+      "{} times what a coroutine"
+    ],
+    "blocking_p99_ms": [
+      "p99 of {}ms",
+      "{}ms at p99"
+    ],
+    "blocking_lag_p99_ms": [
+      "{}ms late",
+      "lag of {}ms"
+    ],
+    "awaited_lag_p99_ms": [
+      "against {}ms"
+    ],
+    "healthy_with_worse_p99": [
+      "all {} of the healthy"
+    ],
+    "invariant_min": [
+      "between {} and"
+    ],
+    "invariant_max": [
+      "and {}"
+    ],
+    "invariant_drift": [
+      "factor of {}"
+    ],
+    "concurrency_range": [
+      "{}-fold range"
+    ],
+    "awaited_growth": [
+      "grows {}-fold"
+    ],
+    "blocking_growth": [
+      "grows {}-fold",
+      "{}-fold, which is to say"
+    ],
+    "smallest_fraction_blocking_ms": [
+      "{}ms of blocking"
+    ],
+    "e3_work_ms": [
+      "out of {}ms"
+    ],
+    "loss_low_pct": [
+      "costs {} percent"
+    ],
+    "loss_high_pct": [
+      "and {} percent"
+    ],
+    "low_concurrency": [
+      "at {} concurrent requests"
+    ],
+    "high_concurrency": [
+      "percent at {}"
+    ],
+    "quiet_lag_p99_ms": [
+      "stays at {}ms"
+    ],
+    "handler_p99_ms": [
+      "reads {}ms"
+    ],
+    "client_p99_ms": [
+      "waited {}ms"
+    ],
+    "middleware_p99_ms": [
+      "middleware clock reads {}ms"
+    ],
+    "blind_factor": [
+      "factor of {}"
+    ],
+    "healthy_factor": [
+      "accurate to {}"
+    ],
+    "live_throughput_drop": [
+      "factor of {} on a real"
+    ],
+    "apparatus_ceiling_rps": [
+      "ceiling of {} rps"
+    ],
+    "live_predicted_rps": [
+      "predicted {} rps"
+    ],
+    "e1_async_awaited_rps": [
+      "| {} |"
+    ],
+    "e1_async_awaited_ceiling": [
+      "| {} |"
+    ],
+    "e1_async_awaited_p99": [
+      "| {} |"
+    ],
+    "e1_async_awaited_lag": [
+      "| {} |"
+    ],
+    "e1_async_blocking_rps": [
+      "| {} |"
+    ],
+    "e1_async_blocking_ceiling": [
+      "| {} |"
+    ],
+    "e1_async_blocking_p99": [
+      "| {} |"
+    ],
+    "e1_async_blocking_lag": [
+      "| {} |"
+    ],
+    "e1_sync_threadpool_rps": [
+      "| {} |"
+    ],
+    "e1_sync_threadpool_ceiling": [
+      "| {} |"
+    ],
+    "e1_sync_threadpool_p99": [
+      "| {} |"
+    ],
+    "e1_sync_threadpool_lag": [
+      "| {} |"
+    ],
+    "e1_async_offloaded_rps": [
+      "| {} |"
+    ],
+    "e1_async_offloaded_ceiling": [
+      "| {} |"
+    ],
+    "e1_async_offloaded_p99": [
+      "| {} |"
+    ],
+    "e1_async_offloaded_lag": [
+      "| {} |"
+    ],
+    "e2_async_awaited_1": [
+      "| {} |"
+    ],
+    "e2_async_awaited_5": [
+      "| {} |"
+    ],
+    "e2_async_awaited_10": [
+      "| {} |"
+    ],
+    "e2_async_awaited_25": [
+      "| {} |"
+    ],
+    "e2_async_awaited_50": [
+      "| {} |"
+    ],
+    "e2_async_awaited_100": [
+      "| {} |"
+    ],
+    "e2_async_awaited_200": [
+      "| {} |"
+    ],
+    "e2_async_blocking_1": [
+      "| {} |"
+    ],
+    "e2_async_blocking_1_inv": [
+      "| {} |"
+    ],
+    "e2_async_blocking_5": [
+      "| {} |"
+    ],
+    "e2_async_blocking_5_inv": [
+      "| {} |"
+    ],
+    "e2_async_blocking_10": [
+      "| {} |"
+    ],
+    "e2_async_blocking_10_inv": [
+      "| {} |"
+    ],
+    "e2_async_blocking_25": [
+      "| {} |"
+    ],
+    "e2_async_blocking_25_inv": [
+      "| {} |"
+    ],
+    "e2_async_blocking_50": [
+      "| {} |"
+    ],
+    "e2_async_blocking_50_inv": [
+      "| {} |"
+    ],
+    "e2_async_blocking_100": [
+      "| {} |"
+    ],
+    "e2_async_blocking_100_inv": [
+      "| {} |"
+    ],
+    "e2_async_blocking_200": [
+      "| {} |"
+    ],
+    "e2_async_blocking_200_inv": [
+      "| {} |"
+    ],
+    "e3_fraction_00": [
+      "| {} |"
+    ],
+    "e3_fraction_0005": [
+      "| {} |"
+    ],
+    "e3_fraction_001": [
+      "| {} |"
+    ],
+    "e3_fraction_002": [
+      "| {} |"
+    ],
+    "e3_fraction_005": [
+      "| {} |"
+    ],
+    "e3_fraction_01": [
+      "| {} |"
+    ],
+    "e3_fraction_025": [
+      "| {} |"
+    ],
+    "e3_fraction_05": [
+      "| {} |"
+    ],
+    "e3_fraction_10": [
+      "| {} |"
+    ],
+    "e3_50_00": [
+      "| {} |"
+    ],
+    "e3_50_0005": [
+      "| {} |"
+    ],
+    "e3_50_001": [
+      "| {} |"
+    ],
+    "e3_50_002": [
+      "| {} |"
+    ],
+    "e3_50_005": [
+      "| {} |"
+    ],
+    "e3_50_01": [
+      "| {} |"
+    ],
+    "e3_50_025": [
+      "| {} |"
+    ],
+    "e3_50_05": [
+      "| {} |"
+    ],
+    "e3_50_10": [
+      "| {} |"
+    ],
+    "e3_200_00": [
+      "| {} |"
+    ],
+    "e3_200_0005": [
+      "| {} |"
+    ],
+    "e3_200_001": [
+      "| {} |"
+    ],
+    "e3_200_002": [
+      "| {} |"
+    ],
+    "e3_200_005": [
+      "| {} |"
+    ],
+    "e3_200_01": [
+      "| {} |"
+    ],
+    "e3_200_025": [
+      "| {} |"
+    ],
+    "e3_200_05": [
+      "| {} |"
+    ],
+    "e3_200_10": [
+      "| {} |"
+    ],
+    "e4_async_awaited_rps": [
+      "| {} |"
+    ],
+    "e4_async_awaited_handler": [
+      "| {} |"
+    ],
+    "e4_async_awaited_middleware": [
+      "| {} |"
+    ],
+    "e4_async_awaited_client": [
+      "| {} |"
+    ],
+    "e4_sync_threadpool_rps": [
+      "| {} |"
+    ],
+    "e4_sync_threadpool_handler": [
+      "| {} |"
+    ],
+    "e4_sync_threadpool_middleware": [
+      "| {} |"
+    ],
+    "e4_sync_threadpool_client": [
+      "| {} |"
+    ],
+    "e4_async_offloaded_rps": [
+      "| {} |"
+    ],
+    "e4_async_offloaded_handler": [
+      "| {} |"
+    ],
+    "e4_async_offloaded_middleware": [
+      "| {} |"
+    ],
+    "e4_async_offloaded_client": [
+      "| {} |"
+    ],
+    "e4_async_blocking_rps": [
+      "| {} |"
+    ],
+    "e4_async_blocking_handler": [
+      "| {} |"
+    ],
+    "e4_async_blocking_middleware": [
+      "| {} |"
+    ],
+    "e4_async_blocking_client": [
+      "| {} |"
+    ]
+  },
+  "checked_documents": [
+    "README.md",
+    "docs/adr/ADR-005-what-this-cannot-measure.md"
+  ],
+  "note": "suite figures are re-measured here; timings are read from the recorded run, because rerunning them changes them. The relationship between them is re-derived by tools/check_invariant.py on every verify."
+}
