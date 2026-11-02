@@ -1,0 +1,21 @@
+{
+  "note": "each command was run by tools/capture_cli.py, exit codes as returned",
+  "runs": [
+    {
+      "command": "event-loop-tax --handler async_awaited --work-ms 5 --concurrency 50 --requests 400 --repeats 3",
+      "exit_code": 0
+    },
+    {
+      "command": "event-loop-tax --handler async_blocking --work-ms 5 --concurrency 50 --requests 400 --repeats 3",
+      "exit_code": 4
+    },
+    {
+      "command": "event-loop-tax --handler sync_threadpool --work-ms 5 --concurrency 50 --requests 400 --repeats 3",
+      "exit_code": 1
+    },
+    {
+      "command": "event-loop-tax --requests 20",
+      "exit_code": 2
+    }
+  ]
+}
